@@ -108,70 +108,70 @@ def autoPlayer(filePath):
    
         try:
             if msg.type == 'note_on' and msg.velocity > 0:
-                # if msg.velocity >= 105.875:
-                #     keyboard.press_and_release('alt + c')
-                # elif msg.velocity >= 95.75:
-                #     keyboard.press_and_release('alt + x')
-                # elif msg.velocity >= 90.625:
-                #     keyboard.press_and_release('alt + z')
-                # elif msg.velocity >= 87.5:
-                #     keyboard.press_and_release('alt + l')   
-                # elif msg.velocity >= 84.375:
-                #     keyboard.press_and_release('alt + k')
-                # elif msg.velocity >= 81.25:
-                #     keyboard.press_and_release('alt + j')
-                # elif msg.velocity >= 78.125:
-                #     keyboard.press_and_release('alt + h')
-                # elif msg.velocity >= 75:
-                #     keyboard.press_and_release('alt + g')
-                # elif msg.velocity >= 71.875:
-                #     keyboard.press_and_release('alt + f')   
-                # elif msg.velocity >= 68.75:
-                #     keyboard.press_and_release('alt + d')
-                # elif msg.velocity >= 65.625:
-                #     keyboard.press_and_release('alt + s')
-                # elif msg.velocity >= 62.5:
-                #     keyboard.press_and_release('alt + a')
-                # elif msg.velocity >= 59.375:
-                #     keyboard.press_and_release('alt + p')
-                # elif msg.velocity >= 56.25:
-                #     keyboard.press_and_release('alt + o')   
-                # elif msg.velocity >= 53.125:
-                #     keyboard.press_and_release('alt + i')
-                # elif msg.velocity >= 50:
-                #     keyboard.press_and_release('alt + u')                   
-                # elif msg.velocity >= 46.875:
-                #     keyboard.press_and_release('alt + y')
-                # elif msg.velocity >= 43.75:
-                #     keyboard.press_and_release('alt + t')
-                # elif msg.velocity >= 40.625:
-                #     keyboard.press_and_release('alt + r')   
-                # elif msg.velocity >= 37.375:
-                #     keyboard.press_and_release('alt + e')
-                # elif msg.velocity >= 34.25:
-                #     keyboard.press_and_release('alt + w')
-                # elif msg.velocity >= 31.125:
-                #     keyboard.press_and_release('alt + q')
-                # elif msg.velocity >= 28:
-                #     keyboard.press_and_release('alt + 0')
-                # elif msg.velocity >= 24.875:
-                #     keyboard.press_and_release('alt + 9')   
-                # elif msg.velocity >= 21.75:
-                #     keyboard.press_and_release('alt + 8')
-                # elif msg.velocity >= 18.625:
-                #     keyboard.press_and_release('alt + 7')
-                # elif msg.velocity >= 15.5:
-                #     keyboard.press_and_release('alt + 6')
-                # elif msg.velocity >= 12.375:
-                #     keyboard.press_and_release('alt + 5')
-                # elif msg.velocity >= 9.25:
-                #     keyboard.press_and_release('alt + 4')   
-                # elif msg.velocity >= 6.125:
-                #     keyboard.press_and_release('alt + 3')
-                # elif msg.velocity >= 3:
-                #     keyboard.press_and_release('alt + 2')
-                # elif msg.velocity > 0:
-                #     keyboard.press_and_release('alt + 1')
+                if msg.velocity >= 105.875:
+                    keyboard.press_and_release('alt + c')
+                elif msg.velocity >= 95.75:
+                    keyboard.press_and_release('alt + x')
+                elif msg.velocity >= 90.625:
+                    keyboard.press_and_release('alt + z')
+                elif msg.velocity >= 87.5:
+                    keyboard.press_and_release('alt + l')   
+                elif msg.velocity >= 84.375:
+                    keyboard.press_and_release('alt + k')
+                elif msg.velocity >= 81.25:
+                    keyboard.press_and_release('alt + j')
+                elif msg.velocity >= 78.125:
+                    keyboard.press_and_release('alt + h')
+                elif msg.velocity >= 75:
+                    keyboard.press_and_release('alt + g')
+                elif msg.velocity >= 71.875:
+                    keyboard.press_and_release('alt + f')   
+                elif msg.velocity >= 68.75:
+                    keyboard.press_and_release('alt + d')
+                elif msg.velocity >= 65.625:
+                    keyboard.press_and_release('alt + s')
+                elif msg.velocity >= 62.5:
+                    keyboard.press_and_release('alt + a')
+                elif msg.velocity >= 59.375:
+                    keyboard.press_and_release('alt + p')
+                elif msg.velocity >= 56.25:
+                    keyboard.press_and_release('alt + o')   
+                elif msg.velocity >= 53.125:
+                    keyboard.press_and_release('alt + i')
+                elif msg.velocity >= 50:
+                    keyboard.press_and_release('alt + u')                   
+                elif msg.velocity >= 46.875:
+                    keyboard.press_and_release('alt + y')
+                elif msg.velocity >= 43.75:
+                    keyboard.press_and_release('alt + t')
+                elif msg.velocity >= 40.625:
+                    keyboard.press_and_release('alt + r')   
+                elif msg.velocity >= 37.375:
+                    keyboard.press_and_release('alt + e')
+                elif msg.velocity >= 34.25:
+                    keyboard.press_and_release('alt + w')
+                elif msg.velocity >= 31.125:
+                    keyboard.press_and_release('alt + q')
+                elif msg.velocity >= 28:
+                    keyboard.press_and_release('alt + 0')
+                elif msg.velocity >= 24.875:
+                    keyboard.press_and_release('alt + 9')   
+                elif msg.velocity >= 21.75:
+                    keyboard.press_and_release('alt + 8')
+                elif msg.velocity >= 18.625:
+                    keyboard.press_and_release('alt + 7')
+                elif msg.velocity >= 15.5:
+                    keyboard.press_and_release('alt + 6')
+                elif msg.velocity >= 12.375:
+                    keyboard.press_and_release('alt + 5')
+                elif msg.velocity >= 9.25:
+                    keyboard.press_and_release('alt + 4')   
+                elif msg.velocity >= 6.125:
+                    keyboard.press_and_release('alt + 3')
+                elif msg.velocity >= 3:
+                    keyboard.press_and_release('alt + 2')
+                elif msg.velocity > 0:
+                    keyboard.press_and_release('alt + 1')
                 
                 keyboard.press(notes[msg.note])
                 keyboard.release('shift')
