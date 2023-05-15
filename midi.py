@@ -1,8 +1,11 @@
-import tkinter
+import tkinter 
 import tkinter.filedialog
+import ttkbootstrap as ttk
+from ttkbootstrap.constants import *
 import mido
 import keyboard
 import time
+
 def autoPlayer(filePath):
     mid = mido.MidiFile(filePath, clip=True, ticks_per_beat=800)
     keyboard_chars = "1234567890qwertyuiopasdfghjklzxcvbnm"
@@ -56,15 +59,21 @@ def prompt_file():
     file_name = tkinter.filedialog.askopenfilename(parent=top)
     top.destroy()
 def begin():
-    root = tkinter.Tk()
+    #Base window
+    root = ttk.Window(themename="darkly")
     root.geometry('160x100')
     root.title('Auto Player')
-    B = tkinter.Button(root, text ="File", command= prompt_file)
-    B.config(width=10, height=6)
-    B.grid(row=0, column=0)
-    P = tkinter.Button(root, text = "Play", command= lambda : autoPlayer(file_name))
-    P.config(width=10, height=6)
-    P.grid(row=0, column=20)
+   
+    # Find midi file button
+    fb = ttk.Button(root, text= "File",command=prompt_file)
+    fb.pack(side=tkinter.LEFT, padx=5, pady=10)
+
+    # Play the midi     , command=lambda: autoPlayer(file_name)
+    pb = ttk.Button(root, text= "Play", command=lambda: autoPlayer(file_name))
+    pb.pack(side=tkinter.LEFT, padx=5, pady=10)
+    
+    #importat thing dont touch
     root.mainloop()
+
 if __name__ == '__main__':
     begin()
